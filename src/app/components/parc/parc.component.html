@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="card" *ngFor="let parc of parcs">
+        <img
+            src="https://www.avantages-enseignants.fr/image/cache/data/journal2/categories/parcs-attractions-200x200.png">
+        <h1>{{parc.nom}}</h1>
+        <p>Capacité de {{parc.capacite}} personnes</p>
+        <button (click)="delete(parc)">Supprimer Parc</button>
+        <button (click)="modifier(parc.id)">Modifier Parc</button>
+    </div>
+</div>

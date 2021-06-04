@@ -1,0 +1,12 @@
+<form [formGroup]="parcForm" (ngSubmit)="ajouter()">
+
+    <label>Nom :
+        <input type="text" formControlName="nom">
+    </label>
+    <label>Capacité :
+        <input type="number" formControlName="capacite">
+    </label>
+
+    <button>Ajouter</button>
+    
+</form>
